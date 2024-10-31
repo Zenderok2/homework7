@@ -1,0 +1,247 @@
+/* Общие стили */
+html,
+body {
+
+    background-color: #f7f7f7;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding: 20px;
+}
+
+
+/* Шапка */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo img {
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #003f7f;
+}
+
+/* Стили таблицы */
+table {
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+thead {
+    background-color: #0056b3;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ececec;
+}
+
+/* Стили формы */
+.contact-form {
+    padding: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #003f7f;
+}
+
+/* Адаптивность: Mobile First */
+
+/* Стили для мобильных телефонов по умолчанию */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+
+nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+/* Flexbox для изменения порядка на мобильных */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    order: 1; /* Отображать таблицу выше списка ссылок */
+}
+
+ul {
+    order: 2;
+}
+
+/* Подвал */
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    position: relative;
+}
+
+/* Выравнивание для выбора пола */
+.contact-form .gender-group,
+.contact-form .contract-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .gender-group label,
+.contact-form .contract-group label {
+    margin-right: 10px;
+}
+
+.contact-form .gender-group input[type="radio"],
+.contact-form .contract-group input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.contact-form .contract-group {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form label[for="contract"] {
+    margin-right: -280px;
+}
+
+/* Стиль для галереи */
+.gallery-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для иконок */
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+/* Позиция пейджера */
+.pager {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Адаптация для планшетов и десктопов */
+@media (min-width: 768px) {
+    main {
+        display: block;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    /* Возвращаем стандартный порядок для планшетов и десктопов */
+    ul {
+        order: 1;
+    }
+
+    table {
+        order: 2;
+    }
+}

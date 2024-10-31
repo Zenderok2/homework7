@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Kubsu Project</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="d-flex justify-content-between align-items-center bg-primary text-white p-4 shadow">
+
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="logo.png" alt="Логотип сайта" class="img-fluid rounded-circle" width="100" height="100">
+            </div>
+            <h1>Kubsu Project</h1>
+            <nav>
+                <ul class="menu list-unstyled d-flex gap-3">
+                    <li><a href="https://www.kubsu.ru" class="text-white">kubsu</a></li>
+                    <li><a href="https://github.com/Zenderok2" class="text-white">GitHub</a></li>
+                    <li><a href="https://vk.com/leto_2023" class="text-white">ВКонтакте</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="my-4">Список гиперссылок</h1>
+
+        <ul class="p-3">
+            <h2 class="mb-3">
+                <li class="mb-2"><a href="//www.kubsu.ru">kubsu.ru</a></li>
+                <li class="mb-2"><a href="https://www.kubsu.ru">kubsu.ru (HTTPS)</a></li>
+                <li class="mb-3">
+                    <a href="https://www.kubsu.ru">
+                        <img src="https://avatars.mds.yandex.net/i?id=ec85b468b93b9ac4906059a34cf2d98a_l-12541995-images-thumbs&n=13"
+                            alt="KubSU" width="400" height="200" class="img-fluid rounded">
+                    </a>
+                </li>
+                <li class="mb-2"><a href="two_page.html">Вторая страница</a></li>
+                <li class="mb-2"><a href="index.html">Главная страница</a></li>
+                <li class="mb-2"><a href="#section">Перейти к разделу</a></li>
+                <li class="mb-2"><a href="index.html?product=socks&color=black&size=m">Ссылка с параметрами</a></li>
+                <li class="mb-2"><a href="index.html?id=123">Ссылка с id</a></li>
+                <li class="mb-2"><a href="page.html">Страница в текущем каталоге</a></li>
+                <li class="mb-2"><a href="about/page.html">Страница в каталоге about</a></li>
+                <li class="mb-2"><a href="../page.html">Страница уровнем выше</a></li>
+                <li class="mb-2"><a href="../../page.html">Страница двумя уровнями выше</a></li>
+
+                <li class="my-3">
+                    <p>Снизу картинка имеет 4 ссылки.</p>
+                    <img src="image.jpg" usemap="#image-map" alt="Карта изображения" class="img-fluid">
+                    <map name="image-map">
+                        <area shape="rect" coords="0,0,441,374"
+                            href="https://yandex.ru/images/search?img_url=https%3A%2F%2Fws.shoutcast.com%2Fimages%2Fcontacts%2F6%2F6a83%2F6a838be7-c375-4677-a212-0b6713859af2%2Fradios%2F2f8b01a7-77e2-4e22-8892-6f9d8d034e93%2F2f8b01a7-77e2-4e22-8892-6f9d8d034e93.png&lr=35&pos=0&rpt=simage&source=serp&text=%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%201"
+                            alt="Часть 1">
+                        <area shape="rect" coords="441,0,882,374"
+                            href="https://yandex.ru/images/search?img_url=https%3A%2F%2Ffuzeservers.ru%2Fwp-content%2Fuploads%2F0%2Fc%2F5%2F0c5432a443e3354bd7552e13b7e74c6c.png&lr=35&pos=6&rpt=simage&text=%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%202"
+                            alt="Часть 2">
+                        <area shape="rect" coords="0,374,441,748"
+                            href="https://yandex.ru/images/search?img_url=https%3A%2F%2Fcreazilla-store.fra1.digitaloceanspaces.com%2Fcliparts%2F3159584%2Fnumbers-clipart-md.png&lr=35&pos=39&rpt=simage&text=%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%203"
+                            alt="Часть 3">
+                        <area shape="rect" coords="441,374,882,748"
+                            href="https://yandex.ru/images/search?img_url=https%3A%2F%2Fpngimg.com%2Fuploads%2Fnumber4%2Fnumber4_PNG15022.png&lr=35&pos=23&rpt=simage&text=%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%204"
+                            alt="Часть 4">
+                    </map>
+                </li>
+
+                <li class="mt-3"><a href="">Ссылка с пустым href</a></li>
+                <li class="mt-3"><a>Ссылка без href</a></li>
+                <li class="mt-3"><a href="https://www.kubsu.ru" rel="nofollow">Ссылка с nofollow</a></li>
+
+                <ol class="p-2">
+                    <li><a href="https://www.kubsu.ru" title="КубГУ">Ссылка 1</a></li>
+                    <li><a href="https://github.com/Zenderok2" title="git hub">Ссылка 2</a></li>
+                    <li><a href="https://vk.com/leto_2023" title="Пример ссылки 3">Ссылка 3</a></li>
+                </ol>
+
+                <li class="mt-3"><a
+                        href="ftp://user001:secretpassword@private.ftp-servers.example.com/mydirectory/myfile.txt">Скачать
+                        файл с FTP</a></li>
+            </h2>
+        </ul>
+
+        <h2>
+
+            <div class="container my-4">
+                <h2 class="text-center mb-4">Таблица</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Машины</th>
+                                <th>Мощность двигателя</th>
+                                <th>Расход топлива</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lada Vaesta</td>
+                                <td>122 л.с.</td>
+                                <td>11,5</td>
+                                <td>2025900 руб</td>
+                            </tr>
+                            <tr>
+                                <td>Volkswagen Polo</td>
+                                <td>110 л.с.</td>
+                                <td>7,9</td>
+                                <td>1850000 руб</td>
+                            </tr>
+                            <tr>
+                                <td>BMW 3</td>
+                                <td>136 л.с.</td>
+                                <td>10,7</td>
+                                <td>1757000 руб</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <h1 id="section" class="text-center my-4">Форма обратной связи</h1>
+
+            <form action="submit_form.php" method="post" class="contact-form container">
+                <div class="mb-3">
+                    <label for="name" class="form-label">ФИО:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="dob" class="form-label">Дата рождения:</label>
+                    <input type="date" id="dob" name="dob" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Пол:</label>
+                    <div class="form-check">
+                        <label for="male" class="form-check-label">Мужской</label>
+                        <input type="radio" id="male" name="gender" value="male" class="form-check-input" required>
+                    </div>
+                    <div class="form-check">
+                        <label for="female" class="form-check-label">Женский</label>
+                        <input type="radio" id="female" name="gender" value="female" class="form-check-input" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="languages" class="form-label">Любимый язык программирования:</label>
+                    <select id="languages" name="languages[]" class="form-select" multiple required>
+                        <option value="pascal">Pascal</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="haskell">Haskell</option>
+                        <option value="clojure">Clojure</option>
+                        <option value="prolog">Prolog</option>
+                        <option value="scala">Scala</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="bio" class="form-label">Биография:</label>
+                    <textarea id="bio" name="bio" class="form-control" rows="5" required></textarea>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <h4>
+                        <h4\>
+                            <label for="contract" class="form-check-label">С контрактом ознакомлен(а)</label>
+                            <input type="checkbox" id="contract" name="contract" class="form-check-input" required>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="validateForm()">Сохранить</button>
+            </form>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <div><img src="Lada.jpg" alt="Image 1"></div>
+                    <div><img src="Polo.webp" alt="Image 2"></div>
+                    <div><img src="BMW.jpg" alt="Image 3"></div>
+                    <div><img src="Changan.webp" alt="Image 4"></div>
+                    <div><img src="Audi.jpg" alt="Image 5"></div>
+                    <div><img src="Mersedec.webp" alt="Image 6"></div>
+                    <div><img src="Mitsubisi.jpg" alt="Image 7"></div>
+                    <div><img src="buhanka.jpg" alt="Image 8"></div>
+                </div>
+                <div class="pager"></div>
+            </div>
+            
+
+            <script>
+                function validateForm() {
+                    const name = document.getElementById('name').value;
+                    const nameRegex = /^[А-Яа-яЁё]+\s[А-Яа-яЁё]+\s[А-Яа-яЁё]+$/;
+                    if (!nameRegex.test(name) || name.split(' ').some(word => word.length < 3)) {
+                        alert("ФИО должно состоять из трёх слов, разделённых пробелом, каждое не короче 3 символов и содержать только кириллицу.");
+                        return false;
+                    }
+
+                    const phone = document.getElementById('phone').value;
+                    const phoneRegex = /^\+79\d{9}$/;
+                    if (!phoneRegex.test(phone)) {
+                        alert("Телефон должен начинаться с +79 и содержать 8 цифр после.");
+                        return false;
+                    }
+
+                    const email = document.getElementById('email').value;
+                    if (email.length < 6) {
+                        alert("Email должен содержать не менее 6 символов.");
+                        return false;
+                    }
+
+                    const bio = document.getElementById('bio').value;
+                    if (bio.length < 30) {
+                        alert("Биография должна содержать не менее 30 символов.");
+                        return false;
+                    }
+
+                    const dob = document.getElementById('dob').value;
+                    const birthYear = new Date(dob).getFullYear();
+                    if (birthYear >= 2017) {
+                        alert("Дата рождения должна быть раньше 2017 года.");
+                        return false;
+                    }
+
+                    return true;
+                }
+            </script>
+            <script>
+                function calculateTotal() {
+                    const productSelect = document.getElementById("product-select");
+                    const selectedProductPrice = parseInt(productSelect.value);
+
+                    const quantityInput = document.getElementById("quantity").value;
+                    const quantity = parseInt(quantityInput);
+
+                    if (isNaN(quantity) || quantity <= 0) {
+                        document.getElementById("total-result").innerText = "Пожалуйста, введите допустимое количество (больше 0).";
+                        return;
+                    }
+
+                    const totalCost = selectedProductPrice * quantity;
+
+                    document.getElementById("total-result").innerText = `Итоговая цена: ${totalCost} руб.`;
+                }
+            </script>
+
+            <div class="order-calculator">
+                <h2>Калькулятор стоимости</h2>
+                <form id="calculator-form" onsubmit="return false;">
+                    <label for="quantity">Количество:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                    <label for="car-select">Выберите машину:</label>
+                    <select id="car-select" name="car-select">
+                        <option value="2025900">Lada Vesta (2,025,900 руб.)</option>
+                        <option value="1850000">Volkswagen Polo (1,850,000 руб.)</option>
+                        <option value="1757000">BMW 3 (1,757,000 руб.)</option>
+                    </select>
+
+                    <label>Тип оплаты:</label><br>
+                    <input type="radio" id="type1" name="service-type" value="credit" checked>
+                    <label for="type1">Купить в кредит</label><br>
+                    <input type="radio" id="type2" name="service-type" value="cash">
+                    <label for="type2">Купить за наличные</label><br>
+                    <input type="radio" id="type3" name="service-type" value="non-cash">
+                    <label for="type3">Купить по безналичному расчету</label><br>
+
+                    <div id="options-section" style="display:none;">
+                        <label for="options-select">Опции:</label>
+                        <select id="options-select">
+                            <option value="0">Без опций</option>
+                            <option value="25000">Страховка на полгода (+25,000 руб.)</option>
+                            <option value="35000">Страховка на год (+35,000 руб.)</option>
+                        </select>
+                    </div>
+
+                    <div id="property-section" style="display:none;">
+                        <input type="checkbox" id="extra-feature" value="5000">
+                        <label for="extra-feature">Оставить чаевые продавцу (+5000 руб.)</label>
+                    </div>
+
+                    <button type="button" onclick="calculateTotal()">Рассчитать</button>
+                </form>
+
+                <div id="total-result" class="mt-3"></div>
+            </div>
+
+            <script>
+                document.querySelectorAll('input[name="service-type"]').forEach(function (radio) {
+                    radio.addEventListener('change', handleServiceTypeChange);
+                });
+
+                function handleServiceTypeChange() {
+                    const selectedType = document.querySelector('input[name="service-type"]:checked').value;
+                    const optionsSection = document.getElementById('options-section');
+                    const propertySection = document.getElementById('property-section');
+
+                    optionsSection.style.display = 'none';
+                    propertySection.style.display = 'none';
+
+                    if (selectedType === 'credit') {
+                        // :)
+                    }
+                    else if (selectedType === 'cash') {
+                        optionsSection.style.display = 'block';
+                    }
+                    else if (selectedType === 'non-cash') {
+                        propertySection.style.display = 'block';
+                    }
+                }
+
+                function calculateTotal() {
+                    const quantity = document.getElementById('quantity').value;
+
+                    if (quantity <= 0) {
+                        document.getElementById('total-result').innerText = 'Пожалуйста, введите количество больше 0.';
+                        return;
+                    }
+
+                    const selectedCarPrice = parseInt(document.getElementById('car-select').value);
+                    const selectedType = document.querySelector('input[name="service-type"]:checked').value;
+
+                    let basePrice = selectedCarPrice;
+
+                    let additionalCost = 0;
+
+                    if (selectedType === 'cash') {
+                        const selectedOption = document.getElementById('options-select').value;
+                        additionalCost += parseInt(selectedOption);
+                    }
+
+                    if (selectedType === 'non-cash') {
+                        const extraFeatureChecked = document.getElementById('extra-feature').checked;
+                        if (extraFeatureChecked) {
+                            additionalCost += parseInt(document.getElementById('extra-feature').value);
+                        }
+                    }
+
+                    const total = (basePrice + additionalCost) * quantity;
+
+                    document.getElementById('total-result').innerText = `Общая стоимость: ${total.toLocaleString()} руб.`;
+                }
+
+                handleServiceTypeChange();
+            </script>
+
+    </main>
+    <!-- Подвал сайта -->
+    <footer class="bg-primary text-white text-center py-3 mt-auto">
+        <p>&copy; Богданов Родион 2024-2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
